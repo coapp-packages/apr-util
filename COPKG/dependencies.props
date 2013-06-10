@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Linkage-expat>$(UsesConfigurationType)</Linkage-expat>
+	<Linkage-expat_redist>$(UsesConfigurationType)</Linkage-expat_redist>
+	<CallingConvention-expat>$(CallingConvention)</CallingConvention-expat>
+	<Linkage-libapr>$(UsesConfigurationType)</Linkage-libapr>
+	<Linkage-libapr_redist>$(UsesConfigurationType)</Linkage-libapr_redist>
+	<CallingConvention-libapr>$(CallingConvention)</CallingConvention-libapr>
+	<Linkage-libapr-iconv>$(UsesConfigurationType)</Linkage-libapr-iconv>
+	<Linkage-libapr-iconv_redist>$(UsesConfigurationType)</Linkage-libapr-iconv_redist>
+	<CallingConvention-libapr-iconv>$(CallingConvention)</CallingConvention-libapr-iconv>
+  </PropertyGroup>
+  <Import Project="$(MSBuildThisFileDirectory)packages\expat\build\native\expat.props" Condition="exists('$(MSBuildThisFileDirectory)packages\expat\build\native\expat.props')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\expat.redist\build\native\expat.redist.props" Condition="exists('$(MSBuildThisFileDirectory)packages\expat.redist\build\native\expat.redist.props')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr\build\native\libapr.props" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr\build\native\libapr.props')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr.redist\build\native\libapr.redist.props" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr.redist\build\native\libapr.redist.props')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr-iconv\build\native\libapr-iconv.props" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr-iconv\build\native\libapr-iconv.props')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr-iconv.redist\build\native\libapr-iconv.redist.props" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr-iconv.redist\build\native\libapr-iconv.redist.props')"/>
+</Project>

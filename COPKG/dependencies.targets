@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildThisFileDirectory)packages\expat\build\native\expat.targets" Condition="exists('$(MSBuildThisFileDirectory)packages\expat\build\native\expat.targets')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\expat.redist\build\native\expat.redist.targets" Condition="exists('$(MSBuildThisFileDirectory)packages\expat.redist\build\native\expat.redist.targets')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr\build\native\libapr.targets" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr\build\native\libapr.targets')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr.redist\build\native\libapr.redist.targets" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr.redist\build\native\libapr.redist.targets')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr-iconv\build\native\libapr-iconv.targets" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr-iconv\build\native\libapr-iconv.targets')"/>
+  <Import Project="$(MSBuildThisFileDirectory)packages\libapr-iconv.redist\build\native\libapr-iconv.redist.targets" Condition="exists('$(MSBuildThisFileDirectory)packages\libapr-iconv.redist\build\native\libapr-iconv.redist.targets')"/>
+</Project>
