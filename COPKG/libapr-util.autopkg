@@ -1,7 +1,7 @@
 nuget {
 	nuspec {
 		id = libapr-util;
-		version : 1.5.2.1;
+		version : 1.5.2.2;
 		title: "Apache Portable Runtime - util";
 		authors: {APR-util contributors};
 		owners: {CoApp Project, Tim Rogers};
@@ -19,9 +19,9 @@ nuget {
 
     dependencies {
         packages : {
-            expat/2.1.0.10;
-            libapr/1.4.6.1;
-            libapr-iconv/1.2.1.1;
+            expat/2.1;
+            libapr/1.4;
+            libapr-iconv/1.2;
         };
     }
 
